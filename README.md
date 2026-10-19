@@ -4,6 +4,20 @@ A group data-science project mapping Pokémon to real-world weather and geograph
 
 **Team Error_105:** Adrian, Hailey, Jonathan and Vignesh. This repository presents the work as a group project.
 
+## Motivation
+
+What might a real-world Pokémon map look like if its locations reflected the surrounding environment? Fire, ice and water types give that question an intuitive starting point: connect fictional attributes to hot, cold and wet places, then explore the result on a map.
+
+The project uses a familiar creative theme to work through an applied data-science workflow. Pokémon records and weather observations come from different sources and have different structures. Turning them into one visual story requires collecting the records, choosing comparable fields, defining a matching rule and joining the resulting tables to coordinates. The interesting part is making those choices understandable enough that a reader can follow why a particular match appears.
+
+## How the mapping works
+
+The processing notebook filters Pokémon into the selected primary types and ranks each type by total base stats, with HP as a further ordering field. The weather notebook collects daily maximum temperature, minimum temperature and precipitation for the candidate locations. It ranks places by heat, cold and rainfall, then attaches geographic coordinates for mapping.
+
+Those rankings provide an explicit way to associate Pokémon with places: higher-ranked fire types can be paired with hotter locations, ice types with colder locations and water types with wetter locations. SQLite tables organize the processed records, while plotting and Folium maps make the weather patterns and geographic associations easier to explore. The separate biome utility extracts ecoregion centroids through Earth Engine for the geographic preparation work.
+
+The resulting assignments depend on the chosen locations, weather dates, type definition and ranking rule. A location's weather on an observed day is also different from its long-run climate. These choices make the project a transparent creative mapping exercise; the rankings do not establish an ecological relationship between the fictional species and real places.
+
 ## Workflow
 
 | Component | Contents |
