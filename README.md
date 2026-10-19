@@ -2,7 +2,7 @@
 
 A group data-science project mapping Pokémon to real-world weather and geographic conditions. The project focuses on fire, ice and water types, combining Pokémon attributes with rankings of hot, cold and wet locations to build a playful geographic mapping.
 
-**Team Error_105:** Adrian, Hailey, Jonathan and Vignesh. This repository presents the work as a group project.
+**Team Error_105:** Adrian, Hailey, Jonathan and Vignesh. This repository presents the work as a group project. (https://lse-ds105.github.io/ds105a-2024-project-error_105/ --> check out the website!)
 
 ## Motivation
 
